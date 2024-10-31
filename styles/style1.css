@@ -1,0 +1,138 @@
+/*
+Style Name: Style #1
+Do not specify panel or product width or height
+Do not specify carousel width, height
+*/
+
+/* General container used to contain all types of carousels and grids */
+.nexternal-style1-container {
+}
+
+/* Each carousel type has its own class */
+.nexternal-style1-horizontal, .nexternal-style1-grid, .nexternal-style1-single {
+    background: #DFDFDF;
+    border: 1px solid black;
+    float: left;
+}
+
+.nexternal-style1-vertical {
+    float: left;
+}
+
+/* Buttons are straight forward */
+.nexternal-style1-horizontal-previous, .nexternal-style1-horizontal-next, .nexternal-style1-vertical-previous, .nexternal-style1-vertical-next {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nexternal-style1-horizontal-previous {
+    float: left;
+    background: url('/wp-content/plugins/nexternal/previous.png') left center no-repeat;
+    height: 215px;
+    width: 30px;
+}
+
+.nexternal-style1-horizontal-next {
+    float: left;
+    background: url('/wp-content/plugins/nexternal/next.png') right center no-repeat;
+    height: 215px;
+    width: 30px;
+}
+
+.nexternal-style1-vertical-previous {
+    background: url('/wp-content/plugins/nexternal/up.png') top center no-repeat;
+    width: 170px;
+    height: 30px;
+}
+
+.nexternal-style1-vertical-next {
+    background: url('/wp-content/plugins/nexternal/down.png') bottom center no-repeat;
+    width: 170px;
+    height: 30px;
+    clear: both;
+}
+
+.nexternal-style1-product {
+    width: 160px;
+    height: 220px;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    padding: 5px;
+    margin: 8px;
+    border: 2px solid orange;
+    background: white;
+}
+
+/* vertical overrides */
+.nexternal-style1-vertical ul .nexternal-style1-product {
+    border: 0;
+}
+
+/* Classes exist for price, original-price, image, name and rating */
+.nexternal-style1-product-price, .nexternal-style1-product-price {
+    font-size: 18px;
+    line-height: 24px;
+    color: red;
+    font-weight: bold
+}
+
+.nexternal-style1-product img {
+    width: 120px;
+}
+
+.nexternal-style1-product-original-price {
+    text-decoration: line-through;
+}
+
+.nexternal-style1-product-rating {
+    width: 100px;
+    height: 20px;
+    background: url('/wp-content/plugins/nexternal/star.jpg') left repeat-x;
+    margin: auto;
+}
+
+/* required */
+.nexternal-style1-vertical ul .nexternal-style1-product {
+    margin: 0;  /*margin breaks vertical carousels */
+}
+
+.nexternal-style1-grid ul, .nexternal-style1-single ul {
+    list-style: none;
+    margin: 0;
+    clear: both;
+}
+
+.nexternal-style1-grid ul li {
+    float: left;
+}
+
+
+.nexternal-style1-product-addtocart a {
+    color: #fff;
+    border-radius: 15px;
+    white-space: nowrap;
+    padding: 3px 20px;
+    margin-top: 3px;
+    background: #c8e230; /* Old browsers */
+    background: -moz-linear-gradient(top,  #c8e230 0%, #99b301 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c8e230), color-stop(100%,#99b301)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #c8e230 0%,#99b301 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #c8e230 0%,#99b301 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #c8e230 0%,#99b301 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #c8e230 0%,#99b301 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c8e230', endColorstr='#99b301',GradientType=0 ); /* IE6-9 */
+}
+
+.nexternal-style1-product-addtocart a:hover {
+    background: #99b301; /* Old browsers */
+    background: -moz-linear-gradient(top,  #99b301 0%, #c8e230 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#99b301), color-stop(100%,#c8e230)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #99b301 0%,#c8e230 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #99b301 0%,#c8e230 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #99b301 0%,#c8e230 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #99b301 0%,#c8e230 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99b301', endColorstr='#c8e230',GradientType=0 ); /* IE6-9 */
+}
+
